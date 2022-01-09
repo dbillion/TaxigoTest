@@ -1,0 +1,33 @@
+{
+  "name": "reach-router-tutorial-09",
+  "version": "1.0.0",
+  "description": "Reach Router Tutorial Step 9",
+  "keywords": [],
+  "main": "src/index.js",
+  "dependencies": {
+    "@reach/router": "^1.3.4",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "react-router-dom": "^6.2.1",
+    "react-scripts": "^5.0.0",
+    "styled-components": "^5.3.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

@@ -1,0 +1,38 @@
+import styled from "styled-components";
+import { Router, Link } from "@reach/router";
+import { shopData } from "./ShopData";
+import ProductCard from "./ProductCard";
+
+const Products = () => {
+  return (
+    <>
+      <Title>Welcome to DC Clothing Shop</Title>
+
+      <ProductsWrapper>
+        {shopData.map((data, index) => (
+            <Link to={`/${index}`}>
+          <ProductCard key={index} {...data} />
+          </Link>
+
+        ))}
+      </ProductsWrapper>
+    </>
+  );
+};
+
+
+
+export default Products;
+
+const Title = styled.p`
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 20px;
+`;
+
+const ProductsWrapper = styled.div`
+  width: fit-content;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 20px;
+`;
